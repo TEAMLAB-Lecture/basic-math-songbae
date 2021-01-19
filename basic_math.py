@@ -73,7 +73,7 @@ def get_mean(number_list):
     mean = 0
     for i in number_list:
         mean+=i
-    mean/=len(number_list)
+    mean//=len(number_list)
     return int(mean)
 
 
