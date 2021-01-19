@@ -73,8 +73,8 @@ def get_mean(number_list):
     mean = 0
     for i in number_list:
         mean+=i
-    mean//=len(number_list)
-    return int(mean)
+    mean/=len(number_list)
+    return mean
 
 
 def get_median(number_list):
@@ -105,10 +105,10 @@ def get_median(number_list):
     if len(number_list)%2==1:
         median= a[len(a)//2]
     else :
-        median=(a[len(a)//2]+a[(len(a)//2)-1])//2
+        median=(a[len(a)//2]+a[(len(a)//2)-1])/2
     return median
 
-temp=[6, 75, 79, 41, 38, 77, 1, 30, 69, 83]
+temp=[78, 15, 69, 26, 84, 17, 67, 95, 76, 82]
 print(get_greatest(temp))
 print(get_mean(temp))
 print(get_median(temp))
